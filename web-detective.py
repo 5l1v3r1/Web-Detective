@@ -27,8 +27,6 @@ bmag = Back.LIGHTGREEN_EX
 res = Style.RESET_ALL
 suc = f'{wh}[{Fore.GREEN}+{wh}]'
 err = f'{wh}[{Fore.RED}-{wh}]'
-findall = 0
-findsuc = 0
 niz = '\n'*2
 
 loop = True
@@ -242,6 +240,8 @@ while loop:
      input()     
 
  if detectivevar == '2':
+     findall = 0 
+     findsuc = 0
      mail = input('Ник/Почта/Имя/Номер: ')
      save = input('Сохранить в TXT файл?[y/n]: ')
      if save == 'y' or save == 'Y': 
